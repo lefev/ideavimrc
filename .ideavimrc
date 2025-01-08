@@ -1,0 +1,19 @@
+let mapleader=" "
+
+set clipboard+=unnamed  " use the clipboards of vim and win
+set clipboard+=ideaput
+set paste               " Paste from a windows or from vim
+set go+=a               " Visual selection automatically copied to the clipboard
+
+map <leader>r <Action>(RenameElement)
+set ideajoin
+set ideastatusicon=gray
+
+nmap <leader>t <Action>(ActivateTerminalToolWindow)
+
+// Open ideavimrc
+nnoremap \e :e ~/.ideavimrc<CR>
+// Reload ideavimrc
+nnoremap \r :action IdeaVim.ReloadVimRc.reload<CR>
+
+
