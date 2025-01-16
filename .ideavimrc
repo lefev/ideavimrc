@@ -1,4 +1,6 @@
 let mapleader=" "
+nnoremap <Space> <Nop>
+vnoremap <Space> <Nop>
 
 """ Editing and Reloading the Config
 set clipboard+=unnamed
@@ -36,14 +38,15 @@ set ideajoin
 set idearefactormode=keep
 vnoremap < <gv
 vnoremap > >gv
-nnoremap [[ :action MethodUp<CR>
-nnoremap ]] :action MethodDown<CR>
+nnoremap ÖÖ :action MethodUp<CR>
+nnoremap öö :action MethodDown<CR>
 nnoremap zc :action CollapseRegion<CR>
 nnoremap zo :action ExpandRegion<CR>
 nnoremap <leader>zc :action CollapseAllRegions<CR>
 nnoremap <leader>zo :action ExpandAllRegions<CR>
-nnoremap <leader>c :action CommentByLineComment<CR>
-map <leader>r :action Refactorings.QuickListPopupAction<CR>
+nnoremap <leader>ä :action CommentByLineComment<CR>
+vnoremap <leader>ä :action CommentByLineComment<CR>
+nnoremap <leader>r :action Refactorings.QuickListPopupAction<CR>
 nnoremap <Leader>= :action ReformatCode<CR>
 nnoremap <leader>o :action OptimizeImports<CR>
 nnoremap <c-r> :action RecentFiles<CR>
@@ -53,7 +56,6 @@ nnoremap <leader>l :action RecentLocations<CR>
 nnoremap <leader>h  :action LocalHistory.ShowHistory<CR>
 nnoremap <c-e> :action GotoNextError<CR>
 nnoremap <S-E> :action GotoPreviousError<CR>
-nnoremap <leader>s :write<CR>
 
 """ Searching and Source Code Navigation
 set incsearch
@@ -70,7 +72,6 @@ nnoremap gc :action GotoClass<CR>
 nnoremap gi :action GotoImplementation<CR>
 nnoremap gd :action GotToDeclaration<CR>
 nnoremap gp :action GotToSuperMethod<CR>
-nnoremap gt :action GotoTest<CR>
 nnoremap gb :action Back<CR>
 nnoremap gf :action Forward<CR>
 
